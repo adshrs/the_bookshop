@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="bookshop e-commerce website" />
+		<meta name="keywords" content="Books, Bookshop, Bookstore">
+		<meta name="author" content="Aditya Chandra Shrestha">
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<style type="text/css">
+			body,html
+			/*This is for the background image of the webpages*/
+			{
+				background-image: url(../images/background.jpg);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				min-height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+		</style>
+	</head>
+
+	<body>	
+		<!--This is the header section of the webpage which contains the logo of the website-->
+		<section class="header">
+			<div class="main_logo">
+				<a href="../index.html"><img src="../images/logo.jpg" id="logo"></a>
+			</div>
+		</section>
+
+		<!--This is the section of the webpage which contains the navigation bar-->
+		<section class="navigation_bar">	
+			<div class="navbar">
+				<ul>
+					<li class="menu"><a href="../index.html">Home</a></li>
+					<li class="menu"><a href="products.html">Products</a></li>
+					<li class="menu"><a href="blog.html">Blog</a></li>
+					<li class="menu"><a href="research.html">Research</a></li>
+					<li class="current"><a href="contact.html" id="a5">Contact</a></li>
+				</ul>
+			</div>
+		</section>	
+
+		<!--This is the section of the webpage that contains all of the main content-->
+		<section class="content" style="height: 890px; width: 100%;">
+			<!--This div contains the title of the webpage-->
+			<div class="title" style="background-color: #3796b3;">
+				<div style="font-weight: normal; color: white;">Contact Us</div>
+			</div>
+
+			<!--This div contains the contact us form and an inline javascript for the form validation-->
+			<div class="contact-box">
+				<form name="messageForm" onsubmit="validateForm()">
+					<label for="first-name">Your First Name</label>
+					<input type="text" name="first-name" id="first-name" class="input-field" placeholder="First Name">
+					<br>
+					<label for="last-name">Your Last Name</label>
+					<input type="text" name="last-name" id="last-name" class="input-field" placeholder="Last Name">
+					<br>
+					<label for="email">Your Email Address</label>
+					<input type="email" name="email" id="email" class="input-field" placeholder="example@email.com">
+					<br>
+					<label for="phone-no">Your Phone Number</label>
+					<input type="tel" name="phone-no" id="phone-no" class="input-field" placeholder="9812345678">
+					<br>
+					<label for="queries">Your Queries</label>
+					<br>
+					<textarea type="text" name="queries" id="queries" class="input-field textarea-field" placeholder="Your message"></textarea>
+					<br>
+					<button type="submit" class="btn" value="send">Submit</button>
+				</form>
+
+				<script type="text/javascript">
+					//This is for the form validation
+					function validateForm() 
+					{
+						var fname = document.forms["messageForm"]["first-name"].value;
+						var lname = document.forms["messageForm"]["last-name"].value;
+						var email = document.forms["messageForm"]["email"].value;
+						var phoneno = document.forms["messageForm"]["phone-no"].value;
+						var queries = document.forms["messageForm"]["queries"].value;
+
+						if(fname == "" || lname == "" || email == "" || phoneno == "" || queries == "")
+						{
+							alert("Empty fields found. Please fill the form.");
+						}
+						else
+						{
+							alert("Thank you for the feedback.");
+						}
+					}
+				</script>
+			</div>
+		</section>
+
+		<!--This is the footer section of the webpage that contains the socials and the links to navigate through the website-->
+		<section class="footer">
+			<div class="socials"> 
+				<a href="#"><img src="../images/facebook-logo.svg"></a>
+				<a href="#"><img src="../images/instagram-logo.svg"></a>
+				<a href="#"><img src="../images/twitter-logo.svg"></a>
+			</div>
+			
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+
+			<p class="copyright">The Bookshop &copy; 2022</p>
+		</section>	
+	</body>
+</html>

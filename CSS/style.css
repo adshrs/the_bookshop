@@ -1,0 +1,401 @@
+/*Styles for the header and the logo*/
+.main_logo
+{
+	background-color: white;
+	text-align: center;
+	height: 90px;
+}
+
+#logo
+{
+	height: 90px;
+	width: 185px;
+}
+
+/*Styles for the navigation bar section*/
+.navbar ul
+{
+	font-family: 'Space Mono', monospace;
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+	width: 100%;
+}
+
+.navbar li
+{
+	display: inline-block;
+	background-color: white;
+	padding: 13px 0px 13px 0px;
+}
+
+.navbar li a
+{
+	font-size: 16px;
+	text-decoration: none;
+	padding: 8px 17px 8px 17px;
+	background-color: white;
+	color: #454545;
+} 
+
+.navbar li a:hover
+{
+	background-color: #e6e6e6;
+	color: #000000;
+	border-radius: 7px;
+}
+
+.header
+{
+	opacity: 0.9;
+}
+
+.navigation_bar
+{
+	margin: 0px;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	opacity: 0.9;
+}
+
+.navbar .current a
+{
+	background-color: #b8b8b8;
+	border-radius: 7px;
+}
+
+/*Styles for the main content section*/
+.content
+{
+	margin: 0px;
+	background-color: white;
+}
+
+/*Styles for the banner on the homepage*/
+.banner
+{
+	margin: 0px;
+	height: 100%;
+	width: 100%; 
+	position: relative;
+	text-align: center;
+}
+
+.banner_image
+{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.banner_link
+{
+	padding:8px 0px 8px 0px;
+	top: 66%;
+	left: 45%;
+	font-size: 19px;
+	font-weight: bolder;
+	font-family: 'Space Mono', monospace;
+	background-color: #e6e6e6;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	border-radius: 2px;
+	opacity: 0.8;
+}
+
+.banner_link a
+{
+	margin: 0;
+	padding:8px 15px 8px 15px;
+	border-radius: 2px;
+	text-decoration: none;
+	color: white;
+	background-color: #478DA8;
+}
+
+.banner_link:hover
+{
+	opacity: 0.9;
+}
+
+/*Styles for the footer section*/
+.footer
+{
+	margin: 0px;
+	padding: 30px 0px 30px 0px;
+	background-color: white;
+	width: 100%;
+	height: 150px; 
+	opacity: 0.9;
+}
+
+.footer .socials
+{
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+.footer .socials img
+{
+	width: 30px;
+	height: 30px;
+	margin: 0px 10px 0px 10px;
+}
+
+.footer ul
+{
+	margin: 35px 0px 0px 0px;
+	padding: 0px;
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+}
+
+.footer li
+{
+	margin: 0px 25px 0px 20px;
+	display: inline-block;
+}
+
+.footer li a
+{
+	text-decoration: none;
+	font-family: 'Space Mono', monospace;
+	color: #454545;
+	font-size: 16px;
+}
+
+.footer li a:hover
+{
+	color: lightslategrey;
+}
+
+.copyright
+{
+	margin: 55px 0px 5px 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: 'Space Mono', monospace;
+	font-size: 14px;
+	color: lightslategrey;
+}
+
+/*Styles for the title divs for the products, blog, research and contact page*/
+.title
+{
+	padding: 40px 0px 40px 0px;
+	background-color: #f5f5f5;
+	opacity: 0.9;
+	box-shadow: 0px  1px 20px lightgrey;
+}
+
+.title div
+{
+	margin: auto;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+	font-size: 35px;
+	font-family: monospace;
+	font-weight: bolder;
+	color: #478DA8;
+}
+
+/*Styles for the products list on the product page*/
+.product_list
+{
+	margin: 20px auto auto auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1300px;
+}
+
+.product_list .product_container
+{
+	height: 395px;
+	width: 205px;
+	text-align: center;
+	font-size: 50px;
+	margin: 20px;
+	padding: 0px;
+	border-radius: 4px;
+}
+
+.product_list .image_container
+{
+	margin: 5px auto auto auto;
+	height: 252px;
+	width: 192px;
+	background-color: #f5f5f5;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+}
+
+.product_list img
+{
+	margin-top: 10px;
+	height: 230px;
+	width: 170px;
+	border-radius: 4px;
+}
+
+.product_list img:hover
+{
+	height: 235px;
+	width: 175px;
+	box-shadow: 0px 0px 10px grey;
+}
+
+.product_list .book_name
+{
+	margin: 5px 0px 0px 0px;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+.product_list .author_name
+{
+	margin: 0px;
+	font-family: monospace;
+	font-size: 14px;
+}
+
+.product_list .price
+{
+	margin: 0px;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.product_list .add_to_cart
+{
+	margin: 0px;
+	padding: 8px 34px;
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: #c2364f;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.product_list .add_to_cart:hover
+{
+	opacity: 1;
+	box-shadow: 1px 1px 15px grey;
+}
+
+.page_no
+{
+	margin: auto;
+	padding: 3px;
+	height: 18px;
+	width: 14px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background-color: lightgrey;
+	border-radius: 4px;
+}
+
+/*Styles for the contact us form on the contact page*/
+.contact-box
+{
+	margin: 50px auto auto auto;
+	padding-top: 30px;
+	width: 500px;
+	background-color: #fff;
+	box-shadow: 0 0 20px lightgrey;
+	border-radius: 10px;
+	font-family: monospace;
+	font-size: 16px;
+}
+
+form
+{
+	margin-left: 43px;
+}
+
+.input-field
+{
+	width: 400px;
+	height: 40px;
+	margin: auto auto 20px auto; 
+	padding-left: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+.textarea-field
+{
+	height: 150px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.btn
+{
+	border-radius: 10px;
+	color: #fff;
+	margin-bottom: 30px;
+	padding: 5px 10px 5px 10px;
+	background-color: #3796b3;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.btn:hover
+{
+	background-color: #3086a1;
+	box-shadow: 0px 0px 3px grey;
+}
+
+/*Styles for the essay div on the blog page*/
+.essay
+{
+	padding: 30px 30px 30px 30px;
+	margin: auto;
+	margin-top: 30px;
+	width: 1000px;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+}
+
+.essay p
+{
+	font-family: sans-serif;
+	font-size: 17px;
+	color: dimgrey;
+}
+
+/*Styles for the contents in the research page*/
+.references img
+{
+	margin-top: 50px;
+	height: 375px;
+	width: 725px;
+	border: 1px solid grey;
+}
+
+.ref-img
+{
+	margin-left: 30px;
+
+}
+
+.references .description
+{
+	margin: 30px 30px 0px 30px;
+	font-family: sans-serif;
+	font-size: 17px;
+	color: dimgrey;
+}
